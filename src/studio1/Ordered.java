@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class Ordered {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Value for x?");
@@ -15,6 +12,10 @@ public class Ordered {
 		int y = in.nextInt();
 		System.out.println("Value for z?");
 		int z = in.nextInt();
+		boolean ascend = (x > y && y > z);
+		boolean descend = (x < y && y < z);
+		boolean is0rdered = ascend || descend;
+		System.out.println(is0rdered);
 
 	}
 
